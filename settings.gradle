@@ -1,0 +1,1 @@
+include ':app', ':common_dao_project', ':common_ui_project', ':common_base_project'

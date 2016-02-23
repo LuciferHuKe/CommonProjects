@@ -1,0 +1,44 @@
+// 声明为Android应用程序
+apply plugin: 'com.android.application'
+
+android {
+    // 编译SDK版本
+    compileSdkVersion 22
+    // build tools的版本
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.lucifer.ui"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // java版本
+    compileOptions {
+        sourceCompatibility org.gradle.api.JavaVersion.VERSION_1_8
+        targetCompatibility org.gradle.api.JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            // 是否进行混淆
+            minifyEnabled false
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 移除lint检查的错误
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // 编译libs目录下的所有jar包
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+}
