@@ -36,4 +36,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:recyclerview-v7:22.2.1'
     //compile 'com.antonionicolaspina:revealtextview:2.0'
+    // 炫酷的加载效果
+    compile 'com.wang.avi:library:1.0.2'
+    compile 'com.nineoldandroids:library:2.4.0'
 }

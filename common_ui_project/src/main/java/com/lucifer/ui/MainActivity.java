@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_image = null;
     private Button btn_badge = null;
     private Button btn_reveal = null;
+    private Button btn_loading = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_image = (Button)findViewById(R.id.btnMainImage);
         btn_badge = (Button)findViewById(R.id.btnMainBadge);
         btn_reveal = (Button)findViewById(R.id.btnMainReveal);
+        btn_loading = (Button)findViewById(R.id.btnMainLoading);
 
         btn_image.setOnClickListener(this);
         btn_badge.setOnClickListener(this);
         btn_reveal.setOnClickListener(this);
+        btn_loading.setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +72,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMainReveal: {
                 Intent intent = new Intent(MainActivity.this, RevealTextActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.btnMainLoading: {
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
                 startActivity(intent);
             }
                 break;
