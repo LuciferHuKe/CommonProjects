@@ -15,12 +15,6 @@ android {
         versionName "1.0"
     }
 
-    // java版本
-    compileOptions {
-        sourceCompatibility org.gradle.api.JavaVersion.VERSION_1_8
-        targetCompatibility org.gradle.api.JavaVersion.VERSION_1_8
-    }
-
     buildTypes {
         release {
             // 是否进行混淆

@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button btn_image = null;
+    private Button btn_badge = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btn_image = (Button)findViewById(R.id.btnMainImage);
+        btn_badge = (Button)findViewById(R.id.btnMainBadge);
+
         btn_image.setOnClickListener(this);
+        btn_badge.setOnClickListener(this);
     }
 
     @Override
@@ -52,6 +56,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btnMainImage: {
                 Intent intent = new Intent(MainActivity.this, ImageInfoActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.btnMainBadge: {
+                Intent intent = new Intent(MainActivity.this, BadgeViewActivity.class);
                 startActivity(intent);
             }
                 break;

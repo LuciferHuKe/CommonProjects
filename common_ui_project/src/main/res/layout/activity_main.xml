@@ -12,13 +12,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnMainImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="图片处理"/>
+
+            <Button
+                android:id="@+id/btnMainBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BadgeView视图"/>
 
         </LinearLayout>
 
