@@ -40,6 +40,12 @@
             android:screenOrientation="portrait">
 
         </activity>
+
+        <activity
+            android:name=".RevealTextActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
