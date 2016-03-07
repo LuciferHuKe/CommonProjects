@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="25dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtMaterial"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Library Name"
+        android:text="MaterialEditText"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="34sp"
+        android:layout_marginTop="10dp"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:text="EditText in Material Design"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="?colorAccent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/basicEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Basic"
+        android:textColor="@color/text_color"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/singleLineEllipsisEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Single Line Ellipsis"
+        android:text="Touch The Ellipsis And See What Happens. Touch The Ellipsis And See What Happens."
+        app:met_singleLineEllipsis="true" />
+
+
+</LinearLayout>

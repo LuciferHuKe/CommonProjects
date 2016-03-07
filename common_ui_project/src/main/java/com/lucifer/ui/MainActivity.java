@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_badge = null;
     private Button btn_reveal = null;
     private Button btn_loading = null;
+    private Button btn_edittext = null;
+    private Button btn_percent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +27,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_badge = (Button)findViewById(R.id.btnMainBadge);
         btn_reveal = (Button)findViewById(R.id.btnMainReveal);
         btn_loading = (Button)findViewById(R.id.btnMainLoading);
+        btn_edittext = (Button)findViewById(R.id.btnMainEdit);
+        btn_percent = (Button)findViewById(R.id.btnMainPercent);
 
         btn_image.setOnClickListener(this);
         btn_badge.setOnClickListener(this);
         btn_reveal.setOnClickListener(this);
         btn_loading.setOnClickListener(this);
+        btn_edittext.setOnClickListener(this);
+        btn_percent.setOnClickListener(this);
     }
 
     @Override
@@ -77,6 +84,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMainLoading: {
                 Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.btnMainEdit: {
+                Intent intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.btnMainPercent: {
+                Intent intent = new Intent(MainActivity.this, PercentLayoutActivity.class);
                 startActivity(intent);
             }
                 break;

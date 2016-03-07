@@ -52,6 +52,24 @@
             android:screenOrientation="portrait">
 
         </activity>
+
+        <activity
+            android:name=".EditTextActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ScrollViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".PercentLayoutActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
