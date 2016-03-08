@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_loading = null;
     private Button btn_edittext = null;
     private Button btn_percent = null;
+    private Button btn_pullRefresh = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_loading = (Button)findViewById(R.id.btnMainLoading);
         btn_edittext = (Button)findViewById(R.id.btnMainEdit);
         btn_percent = (Button)findViewById(R.id.btnMainPercent);
+        btn_pullRefresh = (Button)findViewById(R.id.btnMainPull);
 
         btn_image.setOnClickListener(this);
         btn_badge.setOnClickListener(this);
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_loading.setOnClickListener(this);
         btn_edittext.setOnClickListener(this);
         btn_percent.setOnClickListener(this);
+        btn_pullRefresh.setOnClickListener(this);
     }
 
     @Override
@@ -94,6 +97,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMainPercent: {
                 Intent intent = new Intent(MainActivity.this, PercentLayoutActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.btnMainPull: {
+                Intent intent = new Intent(MainActivity.this, PullListViewActivity.class);
                 startActivity(intent);
             }
                 break;
